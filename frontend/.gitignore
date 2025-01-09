@@ -1,0 +1,92 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+<MDBContainer className="py-5">
+      <MDBRow>
+        {/* Product Details Section */}
+        <MDBCol md="6" className="mb-4">
+          <MDBCard className="shadow-2xl border-0 rounded-4">
+            <MDBCardImage src={product.imageUrl} alt={product.name} fluid className="w-100 rounded-4" />
+            <MDBCardBody>
+              <MDBTypography tag="h3" className="text-font">{product.name}</MDBTypography>
+              <p className="text-descriptions">{product.description}</p>
+              <h5><strong>Price:</strong> ${product.price}</h5>
+            </MDBCardBody>
+          </MDBCard>
+        </MDBCol>
+
+        {/* Order Form Section */}
+        <MDBCol md="6">
+          <MDBCard className="shadow-2xl border-0 rounded-4">
+            <MDBCardBody>
+              <h4 className="order-form-title text-uppercase fw-bold mb-4">Order Form</h4>
+
+              {/* Delivery Address Input */}
+              <MDBInput
+                label="Enter your delivery address"
+                type="text"
+                value={address}
+                onChange={(e) => setAddress(e.target.value)}
+                required
+                className="mb-4"
+                size="lg"
+              />
+
+              {/* Payment Method Selection */}
+              <h6 className="text-uppercase fw-bold mb-3">Choose Payment Method</h6>
+              <MDBRadio
+                name="paymentMethod"
+                id="creditCard"
+                label="Credit Card"
+                value="Credit Card"
+                onChange={() => setPaymentMethod('Credit Card')}
+                checked={paymentMethod === 'Credit Card'}
+                className="mb-3"
+              />
+              <MDBRadio
+                name="paymentMethod"
+                id="paypal"
+                label="PayPal"
+                value="PayPal"
+                onChange={() => setPaymentMethod('PayPal')}
+                checked={paymentMethod === 'PayPal'}
+                className="mb-3"
+              />
+
+              {/* Promo Code Section */}
+              <MDBAccordion className="card mb-4">
+                <MDBAccordionItem collapseId={1} className="border-0" headerTitle="Promo/Student Code or Vouchers">
+                  <MDBInput label="Enter code" type="text" />
+                </MDBAccordionItem>
+              </MDBAccordion>
+
+              {/* Submit Button */}
+              <MDBBtn color="primary" size="lg" onClick={handleSubmit} className="w-100 mt-4">
+                <MDBIcon far icon="check-circle" className="me-2" /> Place Order
+              </MDBBtn>
+            </MDBCardBody>
+          </MDBCard>
+        </MDBCol>
+      </MDBRow>
+    </MDBContainer>

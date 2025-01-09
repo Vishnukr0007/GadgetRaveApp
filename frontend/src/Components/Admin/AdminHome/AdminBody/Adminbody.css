@@ -1,0 +1,23 @@
+.admin-body-sec {
+    padding-top: 70px;
+    display: flex;
+    height: 100vh; /* Full height */
+  }
+  
+  .categories {
+    flex: 1; /* Occupies 1 part of the layout (left) */
+    padding: 10px;
+    background-color: #f8f9fa;
+    
+    
+  }
+  
+  .content-area {
+        width: 80%; /* Adjust as necessary */
+        padding: 20px;
+        background-color: #e6e6e6;
+        border-left: 1px solid #ddd;
+        overflow-y: auto;
+      } /* Optional border for separation */
+  
+ 

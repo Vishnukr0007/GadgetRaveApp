@@ -1,0 +1,18 @@
+.bestseller-section {
+  background: #f9f9f9;
+}
+
+.seller-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-img {
+  border-radius: 16px 16px 0 0;
+}
+
+.bs-heading {
+  font-family: 'Roboto', sans-serif;
+  color: #0d47a1;
+  font-weight: bold;
+}

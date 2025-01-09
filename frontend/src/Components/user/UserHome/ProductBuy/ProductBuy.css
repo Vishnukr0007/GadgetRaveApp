@@ -1,0 +1,454 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 0;
+}
+
+.product-buy-page {
+  min-height: 100vh;
+}
+
+/* Header and Footer */
+
+footer {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+/* Main Container */
+.MDBContainer {
+  max-width: 1100px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.MDBRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.MDBCol {
+  padding: 15px;
+}
+
+/* Item Section */
+.MDBCard {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card {
+  background-color: #fff;
+}
+
+.product-image {
+  border-radius: 8px;
+}
+
+.MDBCardImage {
+  border-radius: 8px;
+}
+
+.MDBCardBody {
+  padding: 20px;
+}
+
+.MDBTypography {
+  color: #333;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+/* Price and Quantity Section */
+.MDBInput {
+  font-size: 14px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.MDBInput input, .MDBInput textarea {
+  font-size: 14px;
+}
+
+.MDBInput[type="number"] {
+  width: 100px;
+}
+
+.MDBCardBody p {
+  font-size: 14px;
+  color: #555;
+}
+
+.MDBRow.g-0 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Delivery Information Form */
+.MDBTypography {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ff6347;
+}
+
+.MDBInput label {
+  font-weight: 600;
+}
+
+.MDBInput[type="text"],
+.MDBInput[type="email"],
+.MDBInput[type="number"] {
+  font-size: 14px;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+}
+
+.MDBInput:focus {
+  box-shadow: 0 0 0 2px rgba(255, 99, 71, 0.5);
+  border-color: #ff6347;
+}
+
+/* Payment Method Section */
+/* Custom Checkbox Styles */
+.custom-checkbox {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: transparent;
+  border-radius: 6px;
+  padding: 8px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.custom-checkbox input[type="checkbox"]:checked {
+  background-color: #f7f7f7;
+  border-color: #ff6347;
+}
+
+.custom-checkbox input[type="checkbox"]:hover {
+  border-color: #ff6347;
+}
+
+.custom-checkbox input[type="checkbox"]:checked ~ .custom-control-label {
+  color: #ff6347;
+}
+
+/* Payment Method Title */
+.payment-title {
+  color: #ff6347;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* Place Order Button Style */
+.MDBBtn {
+  background: linear-gradient(90deg, #ff6347, #ff6f61);
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.MDBBtn:hover {
+  background: linear-gradient(90deg, #ff6f61, #ff6347);
+  transform: scale(1.05);
+}
+
+.MDBBtn:active {
+  background: #ff6347;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional Styles for Spacing and Layout */
+.d-flex.flex-column {
+  gap: 10px;
+}
+
+.d-flex.flex-column .MDBCheckbox {
+  margin-left: 15px;
+}
+
+
+.MDBBtn {
+  background-color: #ff6347;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.MDBBtn:hover {
+  background-color: #e55347;
+}
+
+.MDBIcon {
+  margin-right: 8px;
+}
+
+.MDBTypography h5 {
+  font-size: 20px;
+  color: #333;
+}
+
+.MDBTypography h4 {
+  font-size: 28px;
+  color: #ff6347;
+}
+
+/* Total Price Section */
+.MDBTypography.total-price {
+  color: #ff6347;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .product-buy-page {
+    padding-top: 20px;
+  }
+
+  .MDBContainer {
+    padding: 20px;
+  }
+
+  .MDBRow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .MDBCol {
+    width: 100%;
+    padding: 0;
+  }
+
+  .MDBCard {
+    margin-bottom: 20px;
+  }
+
+  .MDBCardBody {
+    padding: 15px;
+  }
+
+  .MDBInput {
+    font-size: 14px;
+  }
+
+  .MDBTypography {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .MDBBtn {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+}
+
+/* Specific Style Tweaks */
+.custom-card {
+  background-color: #f9f9f9;
+}
+
+.custom-card .MDBCardBody {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.custom-card .MDBTypography {
+  color: #ff6347;
+}
+
+.payment-option {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s;
+}
+
+.payment-option:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.selected-payment {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border: 2px solid #4CAF50 !important;
+}
+
+.payment-option span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.shadow-sm {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Container styling */
+.credit-card-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Typography */
+.form-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff6347;
+  margin-bottom: 10px;
+}
+
+.form-description {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+/* Input styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #ff6347;
+  box-shadow: 0px 0px 5px rgba(255, 99, 71, 0.5);
+  outline: none;
+}
+
+/* Row layout */
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Submit button styling */
+.submit-btn {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #ff6347;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #e55347;
+  box-shadow: 0px 4px 15px rgba(255, 99, 71, 0.3);
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); /* Dimmed background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it's above other elements */
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.popup-content {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Elevation */
+  max-width: 400px;
+  width: 100%;
+  animation: slideUp 0.4s ease-out;
+}
+
+.popup-title {
+  font-size: 1.5rem;
+  color: #4caf50; /* Green for success */
+  margin-bottom: 10px;
+}
+
+.popup-message {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.5;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.payment-option:hover {
+  transform: scale(1.02);
+  background-color: #f1f1f1;
+}
+.payment-option.selected {
+  border: 2px solid #2196f3;
+}
